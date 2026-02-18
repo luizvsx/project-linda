@@ -127,5 +127,40 @@ g++ -std=c++17 tester_linda.cpp -o tester_linda
 ./tester_linda 127.0.0.1 54321   # Rust
 ./tester_linda 127.0.0.1 54322   # Go
 
+Para testar:
+telnet 127.0.0.1 54321 
+
+
+Serviço 1 — Maiúsculas (ID = 1)
+
+WR entrada1 hello world
+EX entrada1 saida1 1
+RD saida1
+
+OK
+OK
+OK HELLO WORLD
+
+Serviço 2 — Inverter string (ID = 2)
+
+WR entrada2 abcdef
+EX entrada2 saida2 2
+RD saida2
+
+OK
+OK
+OK fedcba
+
+Serviço 3 — Tamanho da string (ID = 3)
+
+WR entrada3 programacao
+EX entrada3 saida3 3
+RD saida3
+
+OK
+OK
+OK 11
+
+
 
 
