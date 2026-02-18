@@ -1,6 +1,7 @@
 # Projeto Final — Servidor de Espaço de Tuplas (Linda)
 
-Disciplina: Programação Concorrente  
+Disciplina: Programação Concorrente
+Participantes: Luiz Santos e Yuri Nunes
 
 Este projeto implementa um servidor concorrente inspirado no modelo Linda,
 oferecendo um espaço de tuplas acessível via TCP.
